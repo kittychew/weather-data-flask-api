@@ -43,7 +43,6 @@ All datasets are contained in the `Resources/` folder:
 | `Resources/hawaii.sqlite`        | SQLite DB used by SQLAlchemy                                      |
 | `Resources/hawaii_stations.csv` | Station data (raw CSV)                                            |
 | `Resources/hawaii-measurements.csv` | Climate data (raw CSV)                                        |
-| `Images/header_weather_banner.png` | Optional header banner image (README decoration)              |
 
 ---
 
