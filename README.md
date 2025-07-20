@@ -45,6 +45,13 @@ All datasets are contained in the `Resources/` folder:
 | `Resources/hawaii-measurements.csv` | Climate data (raw CSV)                                        |
 
 ---
+## Live Flask App Preview
+
+This project runs a local Flask server to serve Hawaii climate data through various API endpoints.
+
+![Flask App Running](Images/running_app.py.png)
+
+---
 
 ## API Endpoints
 
@@ -70,6 +77,11 @@ Returns a dictionary of precipitation data for the last 12 months:
   ...
 }
 ```
+  ## API Response – Precipitation Endpoint
+
+  Here’s a sample output from the `/api/v1.0/precipitation` route, returned in clean JSON format.
+
+  ![Precipitation Endpoint Screenshot](Images/precipitation_app.png)
 
 ### `/api/v1.0/stations`
 
