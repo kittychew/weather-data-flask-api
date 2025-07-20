@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 # Database Setup
 #################################################
 # Create engine using the `hawaii.sqlite` database file
-database_path = "/Applications/Data Analysis Bootcamp/UofM-VIRT-DATA-PT-06-2024-U-LOLC/02_Challenges/10_SQL_Advanced/sql-alchemy-challenge/Starter_Code/Resources/hawaii.sqlite"
+database_path = "Resources/hawaii.sqlite"
 engine = create_engine(f"sqlite:///{database_path}")
 
 # Initialize the Flask app
@@ -35,14 +35,14 @@ Station = Base.classes.station
 @app.route('/')
 def home():
     return (
-        "Welcome to the Hawaii Weather API!<br/>"
-        "Available Routes:<br/>"
-        "/api/v1.0/precipitation<br/>"
-        "/api/v1.0/stations<br/>"
-        "/api/v1.0/tobs<br/>"
-        "/api/v1.0/&lt;start&gt;<br/>"
-        "/api/v1.0/&lt;start&gt;/&lt;end&gt;<br/>"
-    )
+    "Welcome to the Hawaii Weather API!<br/><br/>"
+    "Available Routes:<br/>"
+    "<a href='/api/v1.0/precipitation'>/api/v1.0/precipitation</a><br/>"
+    "<a href='/api/v1.0/stations'>/api/v1.0/stations</a><br/>"
+    "<a href='/api/v1.0/tobs'>/api/v1.0/tobs</a><br/>"
+    "<a href='/api/v1.0/2017-01-01'>/api/v1.0/&lt;start&gt;</a><br/>"
+    "<a href='/api/v1.0/2017-01-01/2017-08-01'>/api/v1.0/&lt;start&gt;/&lt;end&gt;</a><br/>"
+)
 
 @app.route('/api/v1.0/precipitation')
 def precipitation():
